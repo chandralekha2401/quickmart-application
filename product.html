@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickMart-Products</title>
+        <link rel="stylesheet" href="CSS/reset.css">
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    </head>
+    <style type="text/tailwindcss">      
+        /* @theme {       
+            --color-clifford: #da373d;      
+        }     */
+    </style>
+</head>
+<body>
+    <header class="flex flex-col items-center py-4 bg-white-100">
+        <img class ="head-banner__img w-35 h-20 object-contain" src="./images/logo.png">
+    </header>
+    <nav class="main-nav">
+        <ul class="flex flex-row items-center justify-center py-4 bg-white-100 space-x-10">
+            <li class="main-nav__item">
+                <a class="text-red-700 hover:text-gray-900" href="index.html"><strong>Home</strong></a>
+            </li>
+            <li class="main-nav__item">
+                <a class="text-red-700 hover:text-gray-900" href="product.html"><strong>Products</strong></a>
+            </li>
+            <li class="main-nav__item">
+                <a class="text-red-700 hover:text-gray-900" href="about.html"><strong>About</strong></a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1 class="text-center font-bold text-[40px]">Our Products</h1>
+            <h1 class=" flex flex-row items-center justify-center py-4 bg-white-100 space-x-10">You can find everything here!</h1>
+        </section>
+        <section>
+        <h2 class="text-center font-bold text-[30px]">Find the product you are looking for</h2>
+        <form action="#">
+            <div class="flex justify-center items-center mt-4">
+                <input type="text" name="search"   placeholder="Search Products..." class="w-100 p-2 border rounded">
+            </div>
+        </form>
+    </section>
+        <section class="flex justify-center mt-10">
+            <div class="grid grid-cols-1 gap-6 w-full max-w-6xl">
+                <!-- Card 1 -->
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-lg font-semibold mb-2">Electronics Collection</h3>
+                    <div class="grid grid-cols-3 gap-4">
+                        <!-- Product 1 -->
+                        <div class="border p-3 rounded">
+                            <img src="./images/smartphone.jpg" alt="Product 1" class="w-full h-30 object-cover rounded">
+                            <h4 class="text-sm font-semibold mt-2">Smartphone</h4>
+                            <p class="text-xs text-gray-600">High-speed processor, 128GB storage.</p>
+                            <div class="flex items-center mt-2">
+                                <img src="./images/logo.png" alt="Brand" class="w-6 h-6 rounded-full">
+                                <span class="ml-2 text-sm font-semibold text-blue-600">$699</span>
+                            </div>
+                            <button class="mt-2 bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700 w-full">Buy Now</button>
+                        </div>
+                        <!-- Product 2 -->
+                        <div class="border p-3 rounded">
+                            <img src="./images/headphones.jpg" alt="Product 2" class="w-full h-32 object-cover rounded">
+                            <h4 class="text-sm font-semibold mt-2">Wireless Headphones</h4>
+                            <p class="text-xs text-gray-600">Noise-canceling, 40-hour battery.</p>
+                            <div class="flex items-center mt-2">
+                                <img src="./images/logo.png" alt="Brand" class="w-6 h-6 rounded-full">
+                                <span class="ml-2 text-sm font-semibold text-blue-600">$199</span>
+                            </div>
+                            <button class="mt-2 bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700 w-full">Buy Now</button>
+                        </div>
+                        <!-- Product 3 -->
+                        <div class="border p-3 rounded">
+                            <img src="./images/smartwatch.jpg" alt="Product 3" class="w-full h-32 object-cover rounded">
+                            <h4 class="text-sm font-semibold mt-2">Smartwatch</h4>
+                            <p class="text-xs text-gray-600">Waterproof, heart rate monitor.</p>
+                            <div class="flex items-center mt-2">
+                                <img src="./images/logo.png" alt="Brand" class="w-6 h-6 rounded-full">
+                                <span class="ml-2 text-sm font-semibold text-blue-600">$149</span>
+                            </div>
+                            <button class="mt-2 bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700 w-full">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+<!-- Card 2 -->
+<div class="bg-white shadow-lg rounded-lg p-6">
+    <h3 class="text-lg font-semibold mb-2">Home Essentials</h3>
+    <div class="grid grid-cols-3 gap-4">
+        <!-- Product 4 -->
+        <div class="border p-3 rounded">
+            <img src="./images/airfryer.jpg" alt="Product 4" class="w-full h-32 object-cover rounded">
+            <h4 class="text-sm font-semibold mt-2">Air Fryer</h4>
+            <p class="text-xs text-gray-600">Healthy cooking, 4L capacity.</p>
+            <div class="flex items-center mt-2">
+                <img src="./images/logo.png" alt="Brand" class="w-6 h-6 rounded-full">
+                <span class="ml-2 text-sm font-semibold text-blue-600">$99</span>
+            </div>
+            <button class="mt-2 bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700 w-full">Buy Now</button>
+        </div>
+        <!-- Product 5 -->
+        <div class="border p-3 rounded">
+            <img src="./images/vaccum.jpg" alt="Product 5" class="w-full h-32 object-cover rounded">
+            <h4 class="text-sm font-semibold mt-2">Vacuum Cleaner</h4>
+            <p class="text-xs text-gray-600">Cordless, powerful suction.</p>
+            <div class="flex items-center mt-2">
+                <img src="./images/logo.png" alt="Brand" class="w-6 h-6 rounded-full">
+                <span class="ml-2 text-sm font-semibold text-blue-600">$179</span>
+            </div>
+            <button class="mt-2 bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700 w-full">Buy Now</button>
+        </div>
+        <!-- Product 6 -->
+        <div class="border p-3 rounded">
+            <img src="./images/coffeemaker.jpg" alt="Product 6" class="w-full h-32 object-cover rounded">
+            <h4 class="text-sm font-semibold mt-2">Coffee Maker</h4>
+            <p class="text-xs text-gray-600">Brew fresh coffee in minutes.</p>
+            <div class="flex items-center mt-2">
+                <img src="./images/logo.png" alt="Brand" class="w-6 h-6 rounded-full">
+                <span class="ml-2 text-sm font-semibold text-blue-600">$79</span>
+            </div>
+            <button class="mt-2 bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700 w-full">Buy Now</button>
+        </div>
+    </div>
+</div>
+</div>        
+        </section>
+        <div class=" flex flex-row items-center justify-center py-4 bg-white-100 space-x-10">
+        <button class="mt-2 bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700 w-50">Load More</button>
+    </div>
+    </main>
+    <footer class="mt-10 bg-[#001F3F] text-white py-6 px-10 rounded-lg shadow-lg">
+        <div class="flex justify-between items-center">
+            <div>
+                <h2 class="text-lg font-semibold">QuickMart</h2>
+                <p>Bringing exceptional quality and value to customers worldwide.</p>
+                <p>Follow us on social media</p>
+            </div>
+            <div class="text-right">
+                <h2 class="text-lg font-semibold">Contact Us</h2>
+                <p>Email: <a href="mailto:support@quickmart.com" class="underline">support@quickmart.com</a></p>
+                <p>Phone: +44 123 456 789</p>
+            </div>
+        </div>
+    
+        <hr class="my-4 border-gray-400">
+        <div class ="flex flex-row items-center justify-center py-4 bg-white-100 space-x-10">
+        <p class="text-center text-gray-300 ">&copy; 2025 QuickMart - All rights reserved</p>
+    </div>
+    </footer>
+</body>
+</html>
